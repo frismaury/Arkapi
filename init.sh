@@ -6,7 +6,7 @@ export FLASK_DEBUG=1
 . ./bin/activate
 
 # install dependencies
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
 # run the app
 python -m flask run --host=0.0.0.0 --port=8000 && \

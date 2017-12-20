@@ -10,7 +10,7 @@ led.color = (1, 1, 1)
 
 
 @app.route('/')
-def dashboard(error=None):
+def dashboard(error=""):
     user = u"Ariel Jiménez"
     return render_template('base.j2', user = user, error=error)
 
@@ -35,6 +35,9 @@ def set_led(color, state):
     else:
         dashboard("Error en solicitud.")
 
+
+def color(R, G, B):
+  led.color = (R, G, B)
 
 def turnOff():
   print("Apagando las luces:")
