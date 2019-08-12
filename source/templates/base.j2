@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Final de Electricidad - {{ user }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+  <h2>{{ user }}</h2>
+
+  <div class="leds-blocks">
+    <a class="red" href="/led/red/on">Turn Red LED ON</a>
+    <a class="red" href="/led/red/off">Turn Red LED OFF</a>
+
+    <a class="blue" href="/led/blue/on">Turn Blue LED ON</a>
+    <a class="blue" href="/led/blue/off">Turn Blue LED OFF</a>
+
+    <a class="green" href="/led/green/on">Turn Green LED ON</a>
+    <a class="green" href="/led/green/off">Turn Green LED OFF</a>
+  </div>
+
+  <div class="text-danger">{{ error }}</div>
+
+  <script src="static/jquery-3.2.1.min.js"></script>
+  <script src="static/webapp.js"></script>
+</body>
+</html>

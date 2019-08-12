@@ -1,2 +1,6 @@
 # Arkapi
-A bit IoT and code for a RaspberryPi and 
+A bit IoT + RaspberryPi + python (flask)
+
+# Dependencies :
+- virtualenv
+
